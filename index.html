@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sena AI Hub</title>
+  <style>
+    :root{
+      --bg:#f6f7fb; --card:#ffffff; --text:#222; --muted:#6b7280; --ring:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Noto Sans KR,sans-serif; background:var(--bg); color:var(--text);}
+    header{padding:28px 20px 8px; text-align:center;}
+    h1{margin:0 0 6px;font-size:28px;}
+    .sub{color:var(--muted); font-size:14px}
+    .wrap{max-width:1100px; margin:18px auto 60px; padding:0 16px;}
+    section{margin:26px 0;}
+    .sec-title{font-size:18px; font-weight:700; margin:0 0 12px;}
+    .grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+    .card{
+      background:var(--card); border:1px solid var(--ring); border-radius:16px; padding:18px; text-align:center;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .card:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.06); border-color:#d1d5db;}
+    .logo{width:44px; height:44px; border-radius:12px; display:block; margin:0 auto 10px; object-fit:contain; background:#fff}
+    .name{font-weight:700; margin:2px 0 4px; font-size:15px}
+    .desc{font-size:12px; color:var(--muted); height:32px; line-height:16px; overflow:hidden}
+    .btn{display:inline-block; margin-top:10px; padding:8px 10px; font-size:13px; border-radius:10px;
+      background:#111; color:#fff; text-decoration:none;}
+    footer{padding:26px; text-align:center; color:var(--muted); font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ Sena AI Hub</h1>
+    <div class="sub">세나의 자주 쓰는 생성형 AI 툴 런처</div>
+  </header>
+
+  <main class="wrap">
+    <!-- AI 에이전트 -->
+    <section>
+      <h2 class="sec-title">AI 에이전트</h2>
+      <div class="grid">
+        <div class="card">
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+          <div class="name">ChatGPT</div>
+          <div class="desc">텍스트/이미지/코드 만능 어시스턴트</div>
+          <a class="btn" href="https://chat.openai.com/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://www.perplexity.ai/favicon.ico" alt="Perplexity">
+          <div class="name">Perplexity</div>
+          <div class="desc">웹 리서치 특화 Q&A</div>
+          <a class="btn" href="https://www.perplexity.ai/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://gemini.google.com/favicon.ico" alt="Gemini">
+          <div class="name">Gemini</div>
+          <div class="desc">구글 생태계 연동</div>
+          <a class="btn" href="https://gemini.google.com/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 이미지 -->
+    <section>
+      <h2 class="sec-title">이미지</h2>
+      <div class="grid">
+        <div class="card">
+          <img class="logo" src="https://midjourney.com/apple-touch-icon.png" alt="Midjourney">
+          <div class="name">Midjourney</div>
+          <div class="desc">고품질 이미지 생성</div>
+          <a class="btn" href="https://www.midjourney.com/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://www.leonardo.ai/favicon.ico" alt="Leonardo">
+          <div class="name">Leonardo</div>
+          <div class="desc">게임/일러스트 제작</div>
+          <a class="btn" href="https://leonardo.ai/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://stability.ai/favicon.ico" alt="Stable">
+          <div class="name">Stable(Flux)</div>
+          <div class="desc">오픈계열 이미지 모델</div>
+          <a class="btn" href="https://stability.ai/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 비디오 -->
+    <section>
+      <h2 class="sec-title">비디오</h2>
+      <div class="grid">
+        <div class="card">
+          <img class="logo" src="https://runwayml.com/favicon.ico" alt="Runway">
+          <div class="name">Runway</div>
+          <div class="desc">Gen-3/4 영상 생성</div>
+          <a class="btn" href="https://runwayml.com/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://klingai.com/favicon.ico" alt="Kling">
+          <div class="name">Kling</div>
+          <div class="desc">실사형 영상 합성</div>
+          <a class="btn" href="https://klingai.com/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://luma.ai/favicon.ico" alt="Luma">
+          <div class="name">Luma</div>
+          <div class="desc">Dream Machine</div>
+          <a class="btn" href="https://lumalabs.ai/dream-machine" target="_blank" rel="noopener">바로가기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 음성/리스닝 -->
+    <section>
+      <h2 class="sec-title">음성/리스닝</h2>
+      <div class="grid">
+        <div class="card">
+          <img class="logo" src="https://www.elevenlabs.io/apple-touch-icon.png" alt="ElevenLabs">
+          <div class="name">ElevenLabs</div>
+          <div class="desc">TTS/보이스 클로닝</div>
+          <a class="btn" href="https://elevenlabs.io/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://suno.com/favicon.ico" alt="Suno">
+          <div class="name">Suno</div>
+          <div class="desc">AI 작곡/보컬</div>
+          <a class="btn" href="https://suno.com/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+        <div class="card">
+          <img class="logo" src="https://www.typecast.ai/favicon.ico" alt="Typecast">
+          <div class="name">Typecast</div>
+          <div class="desc">한국어 보이스/아바타</div>
+          <a class="btn" href="https://typecast.ai/" target="_blank" rel="noopener">바로가기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© Sena — 개인용 AI 도구 런처</footer>
+</body>
+</html>
+
 
